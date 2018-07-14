@@ -1,0 +1,412 @@
+* {
+    font: 0.5rem/1.2rem "Microsoft YaHei";
+    color: inherit;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color:#ffffff;
+    background: #232732;
+}
+body {
+    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+a {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color:#ffffff;
+}
+a:hover,
+a:focus {
+    color:#ffffff;
+    text-decoration: none !important;
+}
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34, 34, 34, 0.1);
+}
+hr.light {
+    border-color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+/*p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}*/
+
+ul,p{
+    margin-bottom: 0;
+}
+
+.buyCol{
+    color:#d6435b;
+}
+.sellCol{
+    color:#01bf9b;
+}
+
+
+
+.header ul{display: flex;}
+.header li{
+    color:#ffffff;
+    background: #30343e;
+    flex:1;
+    text-align: center;
+    height: 1.55rem;
+     font: 0.5rem/1.55rem "Microsoft YaHei";
+    border-bottom: 1px solid transition;
+    cursor:pointer;
+}
+.header li.active{
+    border-bottom: 1px solid #ffae00;
+}
+.header li.active a{
+    color:#ffae00;
+}
+
+.mycontent{
+    display: flex;
+    padding:0.7rem;
+    background: #232732;
+    justify-content:space-between;
+}
+.mycontent>.nearside{
+    width: 56%;
+    /*border:1px solid red;*/
+}
+.mycontent>.offside{
+    color:#9eadc4;
+    width: 40%;
+    /*border:1px solid red;*/
+}
+
+.entrustFir,.showPriceType{
+    margin-bottom: 0.5rem;
+}
+.entrustFir ul{
+    display: flex;
+}
+.entrustFir ul li{
+    color:#9eadc4;
+    background: #232732;
+    border:1px solid #313d4b;
+    width: 50%;
+    text-align: center;
+}
+.entrustFir ul li.active{
+    background: #313d4b;
+    border:1px solid #313d4b;
+}
+
+
+.information{
+    display: flex;
+    justify-content: space-between;
+}
+.information>div{
+    color:#9eadc4;
+}
+
+
+.tradeData{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    /*height: 10.3rem;*/
+    font: 0.5rem/1.2rem "Microsoft YaHei";
+    height: 9.6rem;
+    overflow: hidden;
+    /*overflow: auto;*/
+    position: relative;
+    transition: all 0.2s linear;
+}
+.asksWrap{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    /*align-items: flex-end;*/
+}
+.tradeData>ul{
+    width: 100%;
+}
+
+.tradeData>ul>li,.newPrice{display: flex;justify-content: space-between;}
+.disType{
+    display: flex;
+    justify-content: space-between;
+}
+.disType>li{
+    margin-top: .3rem;
+    width: 48%;
+    border-radius: 4px;
+    background-color: rgb(49, 61, 75);
+    text-align: center;
+    position: relative;
+    color:#9eadc4;
+}
+
+.trading-menu-dropdown{
+    /*display: none;*/
+    position: absolute;
+    top: -3.68rem;
+    text-align: center;
+    background: #313d4b;
+    width: 100%;
+    z-index: 999;
+}
+.trading-menu-dropdown>li:hover,.trading-menu-dropdown>li.active{
+    color:#ffae00;
+}
+
+.trading-menu>span{
+    display: block;
+}
+
+.asksWrap .foldPrice{
+    color:#01bf9b;
+}
+.bidsWrap .foldPrice{
+    color:#d6435b;
+}
+.bidsWrap .tradeNew-table{
+    top: 0;
+}
+.bidsWrap .tradeNew-table,.asksWrap .tradeNew-table{
+   /* position: absolute;
+    transition: all 0.2s linear;*/
+}
+#tradeRecord{
+    height: 21.9rem;
+}
+/*#tradeRecord .price {
+    display: block;
+}
+#tradeRecord .showAssistPrice .price {
+    display: none;
+}
+#tradeRecord .foldPrice {
+    display: none;
+}
+#tradeRecord .showAssistPrice .foldPrice {
+    display: block;
+}*/
+#tradeRecord .tr.body{
+    display: flex;
+    justify-content: space-between;
+}
+.showPriceType>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.showPriceType>ul>li{
+    color:#9eadc4;
+}
+.showPriceType>ul>li:last-child{
+    background-color: rgb(49, 61, 75);
+    width: 2rem;
+    text-align: center;
+    border-radius:4px;
+    position: relative;
+}
+.showPriceType .trading-menu-dropdown{
+    top: 1.3rem;
+}
+
+
+
+.box-btn a.buyBgColor{
+    border-radius: 6px;
+    background-color: rgb(214, 67, 91);
+    display: block;
+    text-align: center;
+}
+.box-btn a.sellBgColor{
+    border-radius: 6px;
+    background-color: #01bf9b;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+/*m买入比例*/
+.rangeSlider{
+    margin-bottom: .5rem;
+}
+.settle{
+    margin-bottom: .7rem;
+}
+.rangeSlider>ul{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(49, 61, 75);
+    border-radius: 4px;
+    color: #9eadc4;
+
+}
+.rangeSlider>ul>li{
+    width: 25%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*测试*/
+.fill-box-body .box .input {
+    position: relative;
+    margin-bottom: .5rem;
+}
+.fill-box-body .box .input label {
+    position: absolute;
+    color: #9eadc4;
+}
+.fill-box-body .box .input label.p {
+    right: 0.5rem;
+}
+.fill-box-body .box .input input{
+    border:1px solid rgb(49, 61, 75);
+    border-radius: 4px;
+    padding-left: 0.2rem;
+    color:#fff;
+    max-width: 100%;    
+    background: transparent;
+}
+
+
+
+input::-webkit-input-placeholder{
+    color:#fff;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#fff;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#fff;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#fff;
+}
+
+
+
+.box-head{
+    margin-top: .5rem;
+    padding-bottom: .25rem;
+    border-bottom:1px solid rgb(49, 61, 75);
+}
+
+
+
+
+
+/*委托*/
+.entrustType{
+    display: flex;
+    justify-content: space-between;
+    padding:0 .7rem .5rem;
+    margin-left: -.7rem;
+    margin-right: -.7rem;
+    border-bottom: 1px solid rgb(158, 173, 196);
+    color:#9eadc4;
+
+}
+.entrustType *{
+        font: 0.5rem/1rem "Microsoft YaHei";
+}
+.entrustType>ul{
+    display: flex;
+}
+.entrustType>ul>li+li{
+    margin-left:.5rem;
+}
+label{
+    font-weight: normal;
+    margin-bottom: 0;
+}
+input[type="radio"]{
+    vertical-align: text-bottom;
+}
+.entrustType>a{
+    background-color: rgb(255, 174, 0);
+    display: block;
+    border-radius: 10px;
+    padding: 0 .4rem;
+}
+.entrustContent li{
+    padding:0.2rem .7rem ;
+    margin-left: -.7rem;
+    margin-right: -.7rem;
+    border-bottom: 1px solid rgb(158, 173, 196);
+    display: flex;
+    justify-content: space-between;
+    color:#9eadc4;
+}
+.entrustContent li+li>div:first-child>div{
+    font: 0.5rem/.8rem "Microsoft YaHei";
+}
+
+.entrustContent li+li>div+div{
+    font: 0.5rem/1.6rem "Microsoft YaHei";
+}
+.entrustContent li a{
+    color:#ffae00;
+}
+
+.entrustType>.history{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.history .trading-menu{
+    background-color: rgb(49, 61, 75);
+    width: 4rem;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.history .trading-menu .trading-menu-dropdown{
+    top: 1.1rem;
+}
+
+#tradeRecord{
+    overflow: auto;
+}
+
+

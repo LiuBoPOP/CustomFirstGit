@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  TheMacFirstProject
+//
+//  Created by 刘波 on 2018/6/8.
+//  Copyright © 2018年 刘波. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Masonry.h"
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "NSString+Extension.h"
+
+#define kScreenWidth      [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight    [UIScreen mainScreen].bounds.size.height
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define LXColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+//#import "YSFMacro.h"
+//#import "UILayoutKit.h"
+//#import "UIView+YSFWebCacheOperation.h"
+#endif /* PrefixHeader_pch */

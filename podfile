@@ -1,0 +1,9 @@
+platform:ios,'9.0'
+ 
+target 'TheMacFirstProject' do
+  pod 'MJExtension'
+  pod 'SDWebImage'
+  pod 'FMDB'
+  pod 'LBProgressHUD'
+  
+end
